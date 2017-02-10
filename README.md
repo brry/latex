@@ -17,8 +17,7 @@ Sharelatex seems to be [slightly better](https://www.google.de/search?q=sharelat
 For reprodicible research, automated report generation and syntax-higlighted code inclusion, use [rmarkdown](http://rmarkdown.rstudio.com/).
 To couple that with the power of LaTeX, you do have to install the latter locally.
 
-Install a recent version of [R](https://github.com/brry/rhydro#install) and 
-[Rstudio](https://www.rstudio.com/products/rstudio/download) (scroll down).
+Install a recent version of [R and Rstudio](https://github.com/brry/rhydro#install).
 
 In R, run `install.packages("rmarkdown")`, which will also install knitr.
 
@@ -30,6 +29,12 @@ In Rstudio, go to `tools -> global options -> Sweave` and set "weave Rnw files u
 To check whether everything is running, download and unzip the [example presentation](https://github.com/brry/latex/raw/master/PresLatexKnitrExample.zip).
 
 Open `rdwd_pres.Rnw` and click "compile PDF" (CTRL+SHIFT+K).
+
+If LaTeX produces errors because no figures are created, try the following:
+
+* install the `rdwd` package manually with `install.packages("rdwd")` in R
+* remove the `cache` folder
+* compile again
 
 
 ### Schedule
