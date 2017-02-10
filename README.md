@@ -30,3 +30,29 @@ In Rstudio, go to `tools -> global options -> Sweave` and set "weave Rnw files u
 To check whether everything is running, download and unzip the [example presentation](https://github.com/brry/latex/raw/master/PresLatexKnitrExample.zip).
 
 Open `rdwd_pres.Rnw` and click "compile PDF" (CTRL+SHIFT+K).
+
+
+### Schedule
+
+**Part 1 (Berry, 1 hour)**
+
+* 05 min: general LaTeX intro
+* 10: doc structure, document class beamer
+* 10: compiling
+* 05: sectioning
+* 10: including figures
+* 05: onslide, pause, <+->
+* 05: knitr intro
+* 10: real life example
+
+**10 min break**
+
+**Part 2 (Irene, 45 min)**
+
+* 05: document class
+* 10: subsections, Table of contents (TOC)
+* 10: tables (Website tex table generator)
+* 10: equations
+* 10: templates
+
+
