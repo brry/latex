@@ -61,3 +61,34 @@ If LaTeX produces errors because no figures are created, try the following:
 * 10: templates
 
 
+### Literature
+For literature management, I recommend to use [zotero](https://www.zotero.org/download/) as a Firefox addon.
+On journal article pages, simply save references into zotero, then export as BibLaTex file, e.g. `myreferences.bib`.
+
+If (instead of just bibtex) you want to use the modern biblatex with biber, set the following:
+
+* In `TexMaker - Options - configure TexMaker - Commands` change the Bibtex entry from "bibtex %.aux" to "biber %" or "biber %.bcf".
+* In `TexMaker - Options - configure TexMaker - Quick build` select "PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + View pdf"
+* In the document itself, use `\usepackage[backend=biber]{biblatex}`, `\bibliography{myreferences}` and `\printbibliography{}`.
+
+Here is a complete example:
+
+```TeX
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+
+\usepackage[backend=biber,
+  citestyle=authoryear,
+  natbib=true,              % for \citet etc
+  maxcitenames=2]{biblatex}
+\bibliography{myreferences} % filename without file extension!
+
+\begin{document}
+This is random sample text, so go ahead and read our paper \citet{boessenkool_effects_2016} and  maybe also
+\citet{allan_anticipated_2010}.
+
+\printbibliography{}
+
+\end{document}
+```
+
