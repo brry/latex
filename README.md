@@ -77,7 +77,7 @@ If (instead of just bibtex) you want to use the modern biblatex with biber, set 
 * In `TexMaker - Options - configure TexMaker - Quick build` select "PdfLaTeX + Bib(la)tex + PdfLaTeX (x2) + View pdf"
 * In the document itself, use `\usepackage[backend=biber]{biblatex}`, `\bibliography{myreferences}` and `\printbibliography{}`.
 
-Here is a complete example:
+Here is a complete example (included as tex file along with myreferences.bib in the [example folder](https://github.com/brry/latex/raw/master/PresLatexKnitrExample.zip)):
 
 ```TeX
 \documentclass[11pt,a4paper]{article}
