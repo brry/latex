@@ -2,6 +2,12 @@
 
 This is material for a small tutorial on LaTeX and reproducible document generation.
 
+* [Install](#install)
+* [R](#r)
+* [Test](#test)
+* [Schedule](#schedule)
+* [Literature](#literature)
+
 
 ### Install
 
