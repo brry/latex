@@ -21,7 +21,7 @@ Sharelatex seems to be [slightly better](https://www.google.de/search?q=sharelat
 ### R
 
 For reprodicible research, automated report generation and syntax-higlighted code inclusion, use [rmarkdown](http://rmarkdown.rstudio.com/).
-To couple that with the power of LaTeX, you do have to install the latter locally.
+To couple that with the power of LaTeX, you do have to install LaTeX locally.
 
 Install a recent version of [R and Rstudio](https://github.com/brry/rhydro#install).
 
@@ -41,6 +41,16 @@ If LaTeX produces errors because no figures are created, try the following:
 * install the `rdwd` package manually with `install.packages("rdwd")` in R
 * remove the `cache` folder
 * compile again
+
+
+### Template
+For my presentations, I am now using a template:
+```R
+install.packages("berryFunctions")
+berryFunctions::instGit("brry/berryFunctions") # createPres is not on CRAN yet
+library(berryFunctions)
+?createPres
+```
 
 
 ### Schedule
